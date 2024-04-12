@@ -94,6 +94,10 @@
 		B17721E42BC9F5C5009EC46D /* iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B17722132BC9FAF5009EC46D /* Models */,
+				B17722122BC9FADF009EC46D /* DetailsView */,
+				B17722112BC9FA91009EC46D /* TitleView */,
+				B177220F2BC9FA62009EC46D /* Network */,
 				B17721E52BC9F5C5009EC46D /* iOSCodeChallengeApp.swift */,
 				B17721E72BC9F5C5009EC46D /* ContentView.swift */,
 				B17721E92BC9F5C7009EC46D /* Assets.xcassets */,
@@ -125,6 +129,34 @@
 				B17722022BC9F5C7009EC46D /* iOSCodeChallengeUITestsLaunchTests.swift */,
 			);
 			path = iOSCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		B177220F2BC9FA62009EC46D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B17722112BC9FA91009EC46D /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
+		B17722122BC9FADF009EC46D /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		B17722132BC9FAF5009EC46D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
