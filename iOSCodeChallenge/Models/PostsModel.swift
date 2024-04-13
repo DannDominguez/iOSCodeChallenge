@@ -1,5 +1,5 @@
 //
-//  DetailsModel.swift
+//  DetailsPosts.swift
 //  iOSCodeChallenge
 //
 //  Created by Daniela Ciciliano on 12/04/24.
@@ -10,22 +10,21 @@ import Foundation
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let details = try? JSONDecoder().decode(Details.self, from: jsonData)
+//   let posts = try? JSONDecoder().decode(Posts.self, from: jsonData)
 
 import Foundation
 
-// MARK: - Detail
-struct PostComents: Codable {
-    let postID: Int
+// MARK: - Post
+struct Post: Codable {
+    let userID: Int
     let id: Int
-    let name: String
-    let email: String
+    var title: String
     let body: String
 
     enum CodingKeys: String, CodingKey {
-        case postID = "postId"
-        case id, name, email, body
+        case userID = "userId"
+        case id, title, body
     }
 }
 
-//typealias Details = [Detail]
+//typealias Posts = [Post]

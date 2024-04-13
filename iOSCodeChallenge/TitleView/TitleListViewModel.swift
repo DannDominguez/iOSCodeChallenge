@@ -1,5 +1,5 @@
 //
-//  DetailsViewModel.swift
+//  TitleListViewModel.swift
 //  iOSCodeChallenge
 //
 //  Created by Daniela Ciciliano on 12/04/24.
@@ -7,21 +7,20 @@
 
 import Foundation
 
-
-class DetailsViewModel: ObservableObject {
-    @Published var comentsPosts: [PostComents]?
+class TitleListViewModel: ObservableObject {
+    @Published var PostsTitle: [Post]?
     @Published var error: Error?
     
-    let ApiClient2 = APIClient()
+    let ApiClient = APIClient()
     
-    func getDetails() {
-        ApiClient2.getDetails { result in
+    func getPosts() {
+        ApiClient.getPostsapi { result in
             DispatchQueue.main.async {
                 
                 switch result {
-                case .success(let coments):
-                    self.comentsPosts = coments
-                    print("results \(String(describing: self.comentsPosts))")
+                case .success(let posts):
+                    self.PostsTitle = posts
+                    print("results \(String(describing: self.PostsTitle))")
                 case .failure(let error):
                     print("Error fetching post: \(error)")
                 }
