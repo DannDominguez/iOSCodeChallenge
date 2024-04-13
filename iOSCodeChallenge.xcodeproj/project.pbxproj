@@ -14,6 +14,10 @@
 		B17721F72BC9F5C7009EC46D /* iOSCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17721F62BC9F5C7009EC46D /* iOSCodeChallengeTests.swift */; };
 		B17722012BC9F5C7009EC46D /* iOSCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722002BC9F5C7009EC46D /* iOSCodeChallengeUITests.swift */; };
 		B17722032BC9F5C7009EC46D /* iOSCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722022BC9F5C7009EC46D /* iOSCodeChallengeUITestsLaunchTests.swift */; };
+		B17722152BC9FFB3009EC46D /* APIClientComents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722142BC9FFB3009EC46D /* APIClientComents.swift */; };
+		B17722172BC9FFCF009EC46D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722162BC9FFCF009EC46D /* DetailsView.swift */; };
+		B17722192BC9FFED009EC46D /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722182BC9FFED009EC46D /* DetailsModel.swift */; };
+		B177221B2BC9FFFD009EC46D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177221A2BC9FFFD009EC46D /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B17721FC2BC9F5C7009EC46D /* iOSCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17722002BC9F5C7009EC46D /* iOSCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		B17722022BC9F5C7009EC46D /* iOSCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B17722142BC9FFB3009EC46D /* APIClientComents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientComents.swift; sourceTree = "<group>"; };
+		B17722162BC9FFCF009EC46D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		B17722182BC9FFED009EC46D /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		B177221A2BC9FFFD009EC46D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 		B177220F2BC9FA62009EC46D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B17722142BC9FFB3009EC46D /* APIClientComents.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -148,6 +157,8 @@
 		B17722122BC9FADF009EC46D /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				B17722162BC9FFCF009EC46D /* DetailsView.swift */,
+				B177221A2BC9FFFD009EC46D /* DetailsViewModel.swift */,
 			);
 			path = DetailsView;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 		B17722132BC9FAF5009EC46D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B17722182BC9FFED009EC46D /* DetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,7 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17721E82BC9F5C5009EC46D /* ContentView.swift in Sources */,
+				B17722172BC9FFCF009EC46D /* DetailsView.swift in Sources */,
+				B17722152BC9FFB3009EC46D /* APIClientComents.swift in Sources */,
+				B17722192BC9FFED009EC46D /* DetailsModel.swift in Sources */,
 				B17721E62BC9F5C5009EC46D /* iOSCodeChallengeApp.swift in Sources */,
+				B177221B2BC9FFFD009EC46D /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
