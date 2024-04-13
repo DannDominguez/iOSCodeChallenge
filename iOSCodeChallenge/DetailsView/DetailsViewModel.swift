@@ -14,13 +14,13 @@ class DetailsViewModel: ObservableObject {
     
     let ApiClient2 = APIClient()
     
-    func getDetails() {
-        ApiClient2.getDetails { result in
+    func getDetails(for post : Post) {
+        ApiClient2.getDetails() { result in
             DispatchQueue.main.async {
                 
                 switch result {
-                case .success(let coments):
-                    self.comentsPosts = coments
+                case .success(let details):
+                    self.comentsPosts = details
                     print("results \(String(describing: self.comentsPosts))")
                 case .failure(let error):
                     print("Error fetching post: \(error)")

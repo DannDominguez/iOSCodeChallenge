@@ -8,38 +8,33 @@
 
 import SwiftUI
 
-struct DetailsView: View {
+struct PostDetailView: View {
     @ObservedObject var viewModel = DetailsViewModel()
     
+    let PostSelected: Post
+    
     var body: some View {
-        
-        NavigationView {
-            VStack {
-                List {
-                    if let coments = viewModel.news {
-                    ForEach(news.hits, id: \.objectID) { item in
-                        if let urlString = item.storyURL {
-                            NavigationLink(destination: NewsDetailView(newsItemURL: urlString)) {
-                                Text("\(item.author)")
-                    
-                    
-                    
-                    
-                    ForEach(viewModel.comentsPosts ?? [], id:\.id) { item in
-                        Text(item.id)
-                        Text(item.)
-                    }
-                }
-                .navigationTitle("Post Details")
-                .onAppear {
-                    viewModel.getDetails()
-                }
-            }
+        VStack(alignment: .leading) {
+            Text("Title: \(PostSelected.title)")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.bottom, 10)
+            
+            Text("Body: \(PostSelected.body)")
+                .padding(.bottom, 20)
+            Text("Number of Comments: \(PostSelected.id)")
+                .foregroundColor(.blue)
+                .padding()
+            
+            if viewModel.comentsPosts != nil {
+                
+            } 
+            Spacer()
             
         }
+        .padding()
+        //.navigationTitle(PostSelected.title)
+        
     }
 }
 
-#Preview {
-    TitleListView()
-}

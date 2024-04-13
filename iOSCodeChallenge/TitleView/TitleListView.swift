@@ -16,7 +16,11 @@ struct TitleListView: View {
             VStack {
                 List {
                     ForEach(viewModel.PostsTitle ?? [], id:\.id) { item in
-                        Text(item.title)
+                        NavigationLink(
+                            destination: PostDetailView(PostSelected: item),
+                            label: {
+                                Text(item.title)
+                            })
                     }
                 }
                 .navigationTitle("Posts Titles")
@@ -29,6 +33,3 @@ struct TitleListView: View {
     }
 }
 
-#Preview {
-    TitleListView()
-}
