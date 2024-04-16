@@ -21,6 +21,8 @@
 		B177221D2BCA3DDE009EC46D /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177221C2BCA3DDE009EC46D /* PostsModel.swift */; };
 		B17722212BCA408B009EC46D /* TitleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722202BCA408B009EC46D /* TitleListViewModel.swift */; };
 		B17722232BCA409A009EC46D /* TitleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722222BCA409A009EC46D /* TitleListView.swift */; };
+		B17722282BCDC13A009EC46D /* TitleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722272BCDC13A009EC46D /* TitleListViewModel.swift */; };
+		B177222B2BCE120F009EC46D /* MockTitleListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17722292BCDF25F009EC46D /* MockTitleListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		B177221C2BCA3DDE009EC46D /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
 		B17722202BCA408B009EC46D /* TitleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleListViewModel.swift; sourceTree = "<group>"; };
 		B17722222BCA409A009EC46D /* TitleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleListView.swift; sourceTree = "<group>"; };
+		B17722272BCDC13A009EC46D /* TitleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleListViewModel.swift; path = iOSCodeChallengeTests/TitleListViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B17722292BCDF25F009EC46D /* MockTitleListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTitleListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		B17721F52BC9F5C7009EC46D /* iOSCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				B17722272BCDC13A009EC46D /* TitleListViewModel.swift */,
+				B17722292BCDF25F009EC46D /* MockTitleListVM.swift */,
 				B17721F62BC9F5C7009EC46D /* iOSCodeChallengeTests.swift */,
 			);
 			path = iOSCodeChallengeTests;
@@ -327,6 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17721F72BC9F5C7009EC46D /* iOSCodeChallengeTests.swift in Sources */,
+				B177222B2BCE120F009EC46D /* MockTitleListVM.swift in Sources */,
+				B17722282BCDC13A009EC46D /* TitleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,19 @@
 
 import Foundation
 
-class TitleListViewModel: ObservableObject {
+protocol PostsProtocol {
+    var postsTitle: [Post]? { get }
+    func getPosts()
+}
+
+
+class TitleListViewModel: ObservableObject, PostsProtocol {
+    var postsTitle: [Post]?
+    
     @Published var PostsTitle: [Post]?
     @Published var error: Error?
+    
+
     
     let ApiClient = APIClient()
     
@@ -30,3 +40,6 @@ class TitleListViewModel: ObservableObject {
         
     }
 }
+
+
+

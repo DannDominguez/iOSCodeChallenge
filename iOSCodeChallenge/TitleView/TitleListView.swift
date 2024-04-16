@@ -10,6 +10,8 @@ import SwiftUI
 struct TitleListView: View {
     @ObservedObject var viewModel = TitleListViewModel()
     
+    //Declarar una let 
+    
     var body: some View {
         
         NavigationView {
